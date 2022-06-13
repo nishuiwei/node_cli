@@ -1,3 +1,7 @@
 #!/usr/bin/env node
 
-console.log("whj cli")
+const program = require('commander')
+
+program.version(require('./package.json').version)
+
+program.parse(program.argv)
